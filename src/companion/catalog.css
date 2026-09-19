@@ -1,0 +1,153 @@
+.system-launch {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 20px 12px;
+  padding: 10px 0;
+  background: none;
+  border: 0;
+  border-bottom: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  font: 11px var(--font-body);
+  cursor: pointer;
+  text-align: start;
+}
+.system-launch strong {
+  margin-inline-start: auto;
+  color: var(--text-primary);
+}
+.system-launch small {
+  font-weight: 400;
+}
+.system-dialog {
+  width: min(1060px, calc(100vw - 32px));
+  max-height: 90dvh;
+  box-sizing: border-box;
+  border: 1px solid var(--border-subtle);
+  border-radius: 20px;
+  padding: 28px;
+  background: var(--surface-page);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+}
+.system-dialog::backdrop {
+  background: #29322c88;
+  backdrop-filter: blur(5px);
+}
+.system-dialog header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 16px;
+}
+.system-dialog h2 {
+  margin: 8px 0;
+  font-size: 28px;
+  letter-spacing: -1px;
+}
+.system-dialog button:not([data-baseweb]),
+.system-dialog select {
+  font: inherit;
+  cursor: pointer;
+  border: 1px solid var(--border-subtle);
+  border-radius: 6px;
+  background: var(--surface-raised);
+  color: var(--text-primary);
+  padding: 9px 14px;
+}
+.system-dialog button:focus-visible,
+.system-dialog a:focus-visible,
+.system-launch:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+.system-controls {
+  margin: 20px 0;
+}
+.system-controls label {
+  font-size: 12px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.system-dialog p {
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+.system-dialog nav {
+  display: flex;
+  gap: 8px;
+  margin: 20px 0;
+}
+.companion-shell .system-dialog nav button[aria-pressed="true"] {
+  background: var(--text-primary);
+  color: var(--surface-raised);
+}
+.system-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+  gap: 16px;
+}
+.system-grid article {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  background: var(--surface-raised);
+  padding: 18px;
+}
+.system-grid h3 {
+  font-size: 14px;
+}
+.system-grid code {
+  font: 10px var(--font-annotation);
+}
+.system-grid a {
+  font-size: 12px;
+  color: var(--action-primary);
+}
+.system-specimen {
+  padding: 16px;
+  background: var(--surface-page);
+  border-radius: 8px;
+  min-height: 100px;
+}
+.system-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: 16px 0;
+}
+.system-tags code {
+  background: var(--surface-page);
+  padding: 4px;
+}
+.token-specimen {
+  height: 65px;
+  display: flex;
+  align-items: center;
+  font-size: 26px;
+}
+.token-color {
+  display: block;
+  width: 100%;
+  height: 55px;
+  border: 1px solid var(--border-subtle);
+  border-radius: 6px;
+}
+.token-space {
+  display: block;
+  height: 30px;
+  background: var(--action-primary);
+}
+.token-radius {
+  width: 50px;
+  height: 50px;
+  border: 2px solid var(--action-primary);
+}
+.system-dialog footer {
+  font-size: 11px;
+  color: var(--text-secondary);
+  margin-top: 24px;
+}

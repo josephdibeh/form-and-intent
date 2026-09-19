@@ -1,0 +1,20 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "form-and-intent-api",
+  "main": "server/worker.ts",
+  "compatibility_date": "2026-09-18",
+  "workers_dev": true,
+  "vars": {
+    "GEMINI_MODEL": "gemini-3.1-flash-lite",
+    "ALLOWED_ORIGIN": "https://josephdibeh.github.io",
+    "ENABLED": "true",
+    "LOCAL_ONLY": "false",
+  },
+  "ratelimits": [
+    {
+      "name": "RATE_LIMITER",
+      "namespace_id": "2026091801",
+      "simple": { "limit": 6, "period": 60 },
+    },
+  ],
+}
